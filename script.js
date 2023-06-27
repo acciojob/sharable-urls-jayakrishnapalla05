@@ -1,8 +1,8 @@
 // your code here
 function update(){
-	const heading=document.getElementById('url');
-	const name=document.getElementById("name").value;
-    const year=document.getElementById("year").value;
+	let heading=document.getElementById('url');
+	let name=document.getElementById("name").value;
+    let year=document.getElementById("year").value;
 	let url='';
 
 	if(name === '' && year === ''){
@@ -18,5 +18,5 @@ function update(){
 	else if(name!=='' && year !== ''){
 		url="https://localhost:8080/"+"?name="+name+"&year="+year;
 	}
-	heading.textContent='url';
+	heading.textContent=url;
 }
