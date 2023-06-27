@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
+  <h3 id="url">https://localhost:8080/</h3>
 	  <form id="urlForm">
-	<h3 id="url">https://localhost:8080/</h3>
-	<label for="name">Name:</label><br>
-	<input type="text" id="name" name="name"><br>
-	<lable for="year">Year:</label><br>
-	<input type="year" name="year" id="year"><br>
-		<br>
-	<button type="submit" id="submit" onclick="update()">Submit</button>
-	
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" required><br><br>
+
+    <input type="submit" value="Generate URL" id="button">
+  </form>
+
     <script type="text/javascript" src="./script.js">
 </script>
   </body>
